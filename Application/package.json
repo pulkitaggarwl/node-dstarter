@@ -1,10 +1,10 @@
 {
-  "name": "nodejs-webapp",
+  "name": "node-dstarter",
   "version": "0.0.0",
-  "description": "nodejs-webapp",
+  "description": "node-dstarter",
   "main": "server.js",
   "author": {
-    "name": "alagrawa"
+    "name": "pulkit"
   },
   "dependencies": {
     "natives": "^1.1.6"
