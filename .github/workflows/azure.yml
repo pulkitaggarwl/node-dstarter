@@ -18,10 +18,14 @@ jobs:
           node-version: '12.x'
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
-          # scope: '@octocat'
-      - run: cd Application 
-      - run: npm install
-      - run: npm run build --if-present
-      - run: npm publish
+
+      - name: npm install and build
+        continue-on-error: false
+        run: |
+           cd Application
+           npm install
+           npm run build --if-present
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  
