@@ -6,6 +6,10 @@
   "author": {
     "name": "pulkit"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pulkitaggarwl/node-dstarter.git"
+},
   "dependencies": {
     "natives": "^1.1.6"
   }
